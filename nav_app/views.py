@@ -1,10 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .forms import GetUserInfoForm
-
-
-def index(request):
-    return HttpResponse("<h1>Welcome to ShareTaxi.</h1>")
 
 
 def book_taxi(request):
