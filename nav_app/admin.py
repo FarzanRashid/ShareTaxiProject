@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import GetUserInfo
+from .models import RideRequest
 
-admin.site.register(GetUserInfo)
+admin.site.register(RideRequest)
 
 # Register your models here.
