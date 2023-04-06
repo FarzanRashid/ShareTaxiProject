@@ -10,9 +10,13 @@ def book_taxi(request):
         try:
             json_data = request.body.decode('utf-8')
             data = json.loads(json_data)
-            my_model = RideRequest(location=data['location'], departure_time=data['departure_time'],
-                                   email=data['email'])
-            my_model.save()
+            model_riderequest = RideRequest(dropoff_location=data['dropoff_location'],
+                                            departure_time=data['departure_time'],
+                                            email=data['email'],
+                                            pickup_location=data['pickup_location'],
+                                            date=data['date']
+                                            )
+            model_riderequest.save()
             response_data = {'success': True}
             return JsonResponse(response_data, status=200)
         except ValueError as e:
