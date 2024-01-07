@@ -1,1 +1,1 @@
-# ShareTaxiProject
+Sharetaxi is a personal project that will allow users who are going to the same destination to book and share a taxi.
